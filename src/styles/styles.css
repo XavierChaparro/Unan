@@ -78,7 +78,7 @@ body {
   }
 }
 .HomeContent {
-  background: url("../assets/img/background.png");
+  background: orange;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 120px 0;
