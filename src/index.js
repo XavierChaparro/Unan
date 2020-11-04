@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './styles/styles.css'
 import reportWebVitals from './reportWebVitals';
+import Unan from './Components/Unan';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Unan />
   </React.StrictMode>,
   document.getElementById('root')
 );

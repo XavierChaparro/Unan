@@ -1,0 +1,49 @@
+.hidden_links
+    height: 0
+    transition-duration: 0.5s
+    a
+        visibility: hidden
+        height: 0
+        color: $Black
+        text-decoration: none
+#mobile_links
+    padding-top: 8px
+    div
+        padding: 10px 20px
+        a
+            text-decoration: none !important
+            color: $Black
+.Header
+    padding: 20px 0
+    position: fixed
+    width: 100%
+    background: $White
+    position: relative
+    transition: .5s
+    .Header_content
+        display: flex
+        justify-content: space-between
+        align-items: center
+    #logo
+        width: 200px
+    .navigation
+        transition-duration: 0.5s
+        .links_navidation
+            display: flex
+            .father_link
+                padding: 0 5px
+                a
+                    text-decoration: none
+                    color: $Black
+                    opacity: .6
+@media ( max-width: 800px )
+    .navigation
+        background: url('../assets/img/menu.svg')
+        width: 35px
+        height: 40px
+        margin-right: 20px
+        background-size: cover
+        background-repeat: no-repeat
+        cursor: pointer
+
+    

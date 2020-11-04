@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main_container {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.hidden_links {
+  height: 0;
+  transition-duration: 0.5s;
+}
+.hidden_links a {
+  visibility: hidden;
+  height: 0;
+  color: #000000;
+  text-decoration: none;
+}
+
+#mobile_links {
+  padding-top: 8px;
+}
+#mobile_links div {
+  padding: 10px 20px;
+}
+#mobile_links div a {
+  text-decoration: none !important;
+  color: #000000;
+}
+
+.Header {
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  background: #ffffff;
+  position: relative;
+  transition: 0.5s;
+}
+.Header .Header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Header #logo {
+  width: 200px;
+}
+.Header .navigation {
+  transition-duration: 0.5s;
+}
+.Header .navigation .links_navidation {
+  display: flex;
+}
+.Header .navigation .links_navidation .father_link {
+  padding: 0 5px;
+}
+.Header .navigation .links_navidation .father_link a {
+  text-decoration: none;
+  color: #000000;
+  opacity: 0.6;
+}
+
+@media (max-width: 800px) {
+  .navigation {
+    background: url("../assets/img/menu.svg");
+    width: 35px;
+    height: 40px;
+    margin-right: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+}
+.HomeContent {
+  background: url("../assets/img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 120px 0;
+}
+.HomeContent .displays {
+  width: 100%;
+  overflow: hidden;
+}
+.HomeContent .displays img {
+  width: 100%;
+}
+.HomeContent .overall {
+  padding: 10px 20px;
+  color: #ffffff;
+}
+.HomeContent .overall .objectives {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.HomeContent .overall .objectives div {
+  width: 50%;
+}
+.HomeContent .overall .twitter {
+  overflow-y: scroll;
+  height: 50vh;
+  padding-bottom: 20px;
+  width: 50%;
+}
+
+/*# sourceMappingURL=styles.css.map */
