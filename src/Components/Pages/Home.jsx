@@ -2,6 +2,7 @@ import React from 'react';
 import display from '../../assets/img/display1.jpg';
 
 const Home = () => {
+	console.log("Xavier")
     return (
         <div className="HomeContent">
             <div className="displays">
