@@ -15,7 +15,6 @@ body {
 
 .hidden_links {
   height: 0;
-  transition-duration: 0.5s;
 }
 .hidden_links a {
   visibility: hidden;
@@ -41,7 +40,6 @@ body {
   width: 100%;
   background: #ffffff;
   position: relative;
-  transition: 0.5s;
 }
 .Header .Header_content {
   display: flex;
@@ -52,36 +50,58 @@ body {
   width: 200px;
 }
 .Header .navigation {
-  transition-duration: 0.5s;
+  background: url("../assets/img/menu.svg");
+  width: 35px;
+  height: 40px;
+  margin-right: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: 0.5;
 }
 .Header .navigation .links_navidation {
   display: flex;
 }
-.Header .navigation .links_navidation .father_link {
-  padding: 0 5px;
+.Header #mobile_links {
+  padding: 10px 0;
 }
-.Header .navigation .links_navidation .father_link a {
+.Header #mobile_links .father_link {
+  padding: 5px 5px;
+}
+.Header #mobile_links .father_link:hover .principal_link {
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+  background: green;
+  color: #ffffff;
+}
+.Header #mobile_links .father_link:hover .child_links {
+  display: block;
+  list-style: none;
+}
+.Header #mobile_links .father_link a {
   text-decoration: none;
   color: #000000;
   opacity: 0.6;
+  transition-duration: 0.3s;
+}
+.Header #mobile_links .father_link .child_links {
+  display: none;
+}
+.Header #mobile_links .father_link .child_links li a {
+  padding: 5px 0 !important;
+}
+.Header #mobile_links .father_link .child_links li a:hover {
+  text-decoration: underline !important;
+  padding: 10px 0 !important;
 }
 
-@media (max-width: 800px) {
-  .navigation {
-    background: url("../assets/img/menu.svg");
-    width: 35px;
-    height: 40px;
-    margin-right: 20px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    cursor: pointer;
-  }
-}
 .HomeContent {
-  background: orange;
+  background: url("../assets/img/background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 120px 0;
+  padding: 40px 0;
+  height: 100vh;
 }
 .HomeContent .displays {
   width: 100%;
@@ -96,11 +116,17 @@ body {
 }
 .HomeContent .overall .objectives {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
 }
 .HomeContent .overall .objectives div {
   width: 50%;
+}
+.HomeContent .overall .objectives div img {
+  width: 300px;
+}
+.HomeContent .overall .objectives .description {
+  padding-left: 20px;
 }
 .HomeContent .overall .twitter {
   overflow-y: scroll;

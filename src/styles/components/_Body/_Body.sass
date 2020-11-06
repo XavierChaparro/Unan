@@ -1,8 +1,9 @@
 .HomeContent
-    background: orange
+    background: url('../assets/img/background.png')
     background-size: cover
     background-repeat: no-repeat
-    padding: 120px 0
+    padding: 40px 0
+    height: 100vh
     .displays
         width: 100%
         overflow: hidden
@@ -13,10 +14,14 @@
         color: $White
         .objectives
             display: flex
-            align-items: center
+            align-items: flex-start
             justify-content: space-evenly
             div
                 width: 50%
+                img
+                    width: 300px
+            .description
+                padding-left: 20px
         .twitter
             overflow-y: scroll
             height: 50vh
